@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:layout_margin="10dp"
+        android:id="@+id/dialog_close"
+        app:iiv_icon="cmd_close"
+        app:iiv_color="@color/colorPrimary"
+        app:iiv_size="16dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:background="@drawable/bg_oval_white"
+        android:layout_gravity="center"
+        app:iiv_size="32dp"
+        android:id="@+id/dialog_icon"
+        app:iiv_icon="cmd_alert"
+        app:iiv_color="@color/colorPrimary"
+        android:layout_width="72dp"
+        android:layout_height="72dp" />
+
+    <TextView
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dialog Title"
+        android:id="@+id/dialog_title" />
+
+    <TextView
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="This is a dialog message in here."
+        android:id="@+id/dialog_message" />
+
+    <Button
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/btn_primary"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="YES"
+        android:textColor="@android:color/white"
+        android:id="@+id/dialog_yes" />
+
+
+</LinearLayout>
